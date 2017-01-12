@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %} My Resume {% endblock %}
+{% block content %}
+	<script>
+		function redirectToSendmail(){
+			var nam = document.getElementById("name").value;
+			var email = document.getElementById("email_add").value;
+			var message = document.getElementById("message_text").value;
+			// var alert_message = "Please enter";
+			if((nam.length == 0) || (email.length == 0) || (message.length == 0)){
+				if(nam.length == 0){
+					// alert_message = alert_message + " your name";
+					document.getElementById("name").style.borderColor = "red";
+					document.getElementById("name").placeholder = "Please enter your name";
+					document.getElementById("name").className += "placeHolderColor";
+ 				} 
+ 				if(email.length == 0){
+ 					if (nam.length == 0){
+	 					// alert_message = alert_message + ", email address";
+	 					document.getElementById("email_add").style.borderColor = "red";
+	 					document.getElementById("email_add").placeholder = "Please enter your email";
+	 					document.getElementById("email_add").className += "placeHolderColor";
+	 					// document.getElementById("email_add").className += "missing-value";
+	 				} else {
+	 					// alert_message = alert_message + " your email address";	
+	 					document.getElementById("email_add").style.borderColor = "red";
+	 					document.getElementById("email_add").placeholder = "Please enter your email";
+	 					document.getElementById("email_add").className += "placeHolderColor";
+	 				}
+ 				}
+ 				if(message.length == 0){
+ 					if((nam.length == 0) || (email.length == 0)){
+	 					// alert_message = alert_message + " and the message";
+	 					document.getElementById("message_text").style.borderColor = "red";
+	 					document.getElementById("message_text").placeholder = "Please enter your message";
+	 					document.getElementById("message_text").className += "placeHolderColor";
+	 				} else {
+	 					// alert_message = alert_message + " the message";
+	 					document.getElementById("message_text").style.borderColor = "red";
+	 					document.getElementById("message_text").placeholder = "Please enter your message";
+	 					document.getElementById("message_text").className += "placeHolderColor";
+	 				}
+ 				}
+ 				// alert(alert_message);
+ 			}else {	 
+				document.getElementById("myForm").submit();
+			}
+		}
+	</script>
+	<div class="contact">
+		<h3>Leave me a message here and I will get back to you as soon as possible!</h3>
+		<aside class="aside-contact-form">
+			<form id="myForm" action="/sendmail/" method="post" > {% csrf_token %}
+        		<input type="text" id="name" name="name" placeholder="name">
+        		<input type="text" id="phone" name="phone" placeholder="Phone">
+        		<input type="text" id="email_add" name="email_add" placeholder="Email address"> 
+        		<textarea id="message_text" onkeyup="lettersFunction()" maxlength="500" rows=15 cols= 20 name="message" placeholder="Enter message here..."></textarea>
+        		<div id="chars">Charaters left: <span id="chars_remaining">500</span></div>
+    	    	<input class="submit" type="button" onclick="redirectToSendmail()" value="Submit">
+	    	</form>
+	    	 <script type="text/javascript">
+	            function lettersFunction(){
+	                var x = document.getElementById("chars_remaining").innerHTML;
+	                parseInt(x);
+					var message_string = document.getElementById("message_text").value;
+					message_string = message_string.replace(/\s+/g, "");
+					var message_length = message_string.length;
+					document.getElementById("chars_remaining").innerHTML = (500 - message_length);
+	            }
+	        </script>
+	    </aside>
+	    <aside class="aside-contact-info">
+	    	<div class="contact-info">
+	    		<img src="/static/Shahid-Khan.png" class="image">
+	    		<p>
+	    		Shahid Khan
+	    		<br/>
+	    			<span>
+	    				Phone: 613 203 6457<br/>
+	    				Email: shahidahmads1@gmail.com
+	    			</span>
+	    		</p>
+	    	</div>
+	    </aside>
+	</div>
+{% endblock %}

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
+		<title>Shahid Khan</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="/static/styles.css">
+		<link rel="shortcut icon" href="/static/MyFavicon.ico" type="image/x-icon">
+		<link rel="icon" href="/static/MyFavicon.ico" type="image/x-icon">		
+		<script type="text/javascript">
+			function showDownloadResume(){
+				document.getElementById("download-resume").classList.toggle("show");
+			}
+			
+			// function findWidth(){
+				// var wid = window.innerWidth;
+				// if(wid <= 600){
+					// alert(wid);
+				// }
+				// $("ul").remove("#nested-ul");
+			}
+		</script>
+		<!--[if IE]>
+			<style>
+				.BSIT {
+					margin: 50px 0 0 0;
+				}
+			</style>
+		<![endif]-->
+	</head>
+	<body>	
+		<div id="page">
+			<header>
+				<div class="div-logo">
+					<!-- <a class="logo" title="Home" href="/">&ltcode&#47&gt<span style="font-size: .5em;"> passion</span></a> -->
+						<a class="logo" title="Home" href="/"><img src="/static/logo10.png" width= 150 height=60></a>
+				</div>
+			</header>
+
+			{% block content %}{% endblock %}
+			
+			<nav>
+				<ul>
+					<li>
+						<a title="View my resume" href="/resume">Resume</a>
+					</li>
+					<li>
+						<a title="Contact me here" href="/contact">Contact</a>
+					</li>
+					<li>
+						<a title="About me and this website" href="/about">About</a>
+					</li>
+					<li >
+						<a title="Download my resume" aria-haspopup="true" target="_blank" href="/static/Shahid-Khan.pdf">Download</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<footer>
+				<div class="footer">
+					<a href="/" style="text-decoration: none;">shahidhahmedkhan.info</a> &#124 Created by
+				
+					<a title="Shahid Khan" href="/resume">Shahid Khan</a>
+				
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

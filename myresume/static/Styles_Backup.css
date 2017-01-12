@@ -1,0 +1,1586 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,700italic);
+body{
+	font-family: 'Cabin', Ubuntu;
+	background: url(background5.jpg);
+	background-size: fit;
+	background-attachment: fixed;
+	font-size: 16px;
+	font-weight: 300;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+#page {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/*max-width: 1200px;*/
+	margin: 0 auto -104px;
+	/*position: relative;*/
+}
+
+/* Header */
+header {
+	height: 160px;
+	position: relative;
+}
+.div-logo {
+	background-color: gray;
+}
+a.logo > span {
+	/*color: red;
+	background-color: blue;*/
+}
+header a.logo{
+	z-index: 1;
+	padding-top: 5px;
+	border-color:black;
+	border: 1px solid;	
+	border-radius: 5px;
+	line-height: 20px;
+	position: absolute;
+	display: block;
+	width: 160px;
+	height: 50px;
+	color: black;
+	font-size: 2em;
+	background-size: contain;
+	top: 57px;
+	left: 150px;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+/* Navigation */
+nav {
+	background-color: rgba(0,0,0, .05);
+	border-radius: 5px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-left: 6%;
+	margin-top: 50px;	
+	padding: 10px 0 0 0;
+	width: 90%;
+	height: 55px;	
+}
+
+nav::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+nav ul {
+	list-style: none; 
+	margin: 0;
+	padding: 0px;
+}
+
+nav ul li:hover {
+	background-color: rgba(0,0,0, 1);
+	color: black;
+	margin: 0px;
+	padding: 0;
+}
+
+nav ul li:hover > ul {
+	display: block;
+	background-color: rgba(0,0,0,1);
+	border-radius: 5px;
+	
+}
+
+nav ul li a {
+	display: inline-block;
+	color: black;
+	padding: 0px 0px;
+	margin: 0px;
+	text-decoration: none;
+	width: 100px;
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	transition-duration: 0.4s;
+}
+
+nav ul li a:visited {
+	color: #000;
+}
+
+nav ul li a:hover{
+	border: 1px solid black;
+	border-radius: 5px;
+	color: white;
+	background-color: rgba(0,0,0, 1);
+}
+
+nav ul ul {
+	position: relative;
+	top: 100%;
+	background-color: black;
+	display: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul ul li {
+	position: relative;
+	text-align: left;
+	padding: 0px;
+	margin: 0 0 0 7px;
+}
+
+nav ul ul li:hover {
+	margin: 0 0 0 7px;
+}
+
+nav > ul {
+	padding-left: 500px;
+}
+
+nav > ul > li {
+	float: left;
+	border-radius: 5px;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav > ul > li > a {
+	width: auto;
+	padding: 10px 20px 15px 20px;
+	margin: 0px;
+}
+
+nav a[aria-haspop="true"]::after {
+	content: '';
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 16px;
+	right: 15px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid white;
+	
+}
+
+nav ul li span:hover {
+	border-radius: 0px;
+	background-color: rgba(0,0,0, 1);
+	color: white;
+}
+
+/* Home page */
+#home {
+	height: 520px;
+	background-color: rgba(0,0,0, .05);
+	width: 45%;
+	margin: 10px 0 50px 27%;
+	padding: 0 0 0 0;
+}
+
+/* Explore */
+.shahid {
+	position: absolute; 
+	width: 25%;
+	top: 37%;
+	left: 37%;
+}
+
+.shahid h1 {
+	line-height: 1em;
+	font-size: 3em; 
+	margin: 0 0 0 0;
+	color: #000;
+}
+
+.round-button {
+    display:block;
+    width:150px;
+    height:100px;
+    line-height:50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color:black;
+    text-align:center;
+    text-decoration:none;
+    font-size:20px;
+    padding-top: 45px;
+}
+
+.round-button:hover {
+    background: rgba(0,0,0,.2);
+    transition-duration: 0.4s;
+}
+
+div.explore {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	top: 250px;
+	left: 33%;
+}
+
+div.explore a {
+	position: relative;
+	font-size: 40px;
+	text-decoration: none;
+	color: black;
+}
+
+div.explore a:hover {
+	color: black;
+}
+
+/* Resume */
+.resume {
+	width: 80%;
+	height: auto;
+	position: relative;
+	color: rgba(0,0,0,1);
+	background-color: rgba(0,0,0, .05);
+	border-radius: 4px;
+	padding: 30px 40px 40px 40px;
+	margin: 0 0 40px 7%;
+}
+
+.resume > hr {
+	height: 20px; 
+	margin-bottom: 50px; 
+	border:0.5px solid; 
+	border-top: 0px; 
+	border-right: 0px; 
+	border-left: 0px; 
+	border-color:black;
+}
+
+.resume  h2 {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.resume h3 {
+	margin-top: 30px;
+}
+
+.resume > h5 {
+	font-weight: normal;
+	text-align: center;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.resume-content aside{
+	width: 60%;
+	float: left;
+	padding: 0 0 0 20px;
+	margin: 0px 0px 0px 0px;
+}
+
+.resume-content aside h5 {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	font-weight: normal;
+	font-size: .9em;
+}
+
+.text-position-right {
+	width: 100%;
+	text-align: right;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.text-position-left {
+	text-align: left;
+}
+
+.txt-pos {
+	font-weight: normal;
+	font-size: .9em;
+	line-height: 20px;
+	left: 10%;
+	padding: 0 0 0 30px;
+	margin: 0 0 0 0;
+	width: auto;
+	height: auto;
+}
+
+#education {
+	position: relative;
+}
+
+#education aside.duration {
+	width: 30%;
+	padding-left: 0px;
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+.school {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+/*.school */
+.school > li > h5{
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.BSIT {
+	margin: 30px 0 0 0;
+}
+
+#education > div.txt-pos > ul {
+		padding-top: 40px;
+}
+
+::-webkit-input-placeholder {
+	color: black;
+}
+
+.placeHolderColor::-webkit-input-placeholder {
+	color: red;	
+}
+
+#program-related-skills {
+	width: 100%;
+}
+
+.experience {
+ 	padding: 0 0 0 0;	
+ 	text-align: left;
+ }
+ 
+.experience aside.place {
+	width: 60%;
+	float: left;
+	padding: 0 0 0px 20px;
+	margin: 0px 0px 0px 0px;
+}
+
+.experience aside.duration {
+	width: 25%;
+	font-size: .9em;
+}
+
+.experience aside h4 {
+ 	margin-left: 2%;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.experience aside h5 {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.title {
+	height: 20px;
+	margin: 10px 0 0 0;
+	padding: 0 0 0 5%;
+	text-align: left;
+}
+
+.roles{
+	margin: 0 0 0 7%;
+	padding: 0 0 0 0;
+	font-size: .9em;
+	line-height: 20px;
+}
+
+.pos-right {
+	float: right;
+}
+
+.top-padding { 
+	margin-top: 50px;
+}
+
+/* Contact */
+.contact {
+	width: 80%;
+	height: auto;
+	position: relative;
+	color: rgba(0,0,0,1);
+	background-color: rgba(0,0,0, .05);
+	border-radius: 4px;
+	padding: 30px 40px 40px 40px;
+	margin: 0 0 40px 7%;
+	/*
+	position: relative;
+	background-color: rgba(255,255,255, .05);
+	height: auto;
+	margin: 0 40px 50px 40px;
+	padding: 40px 40px 10px 40px;
+	border-radius: 5px;*/
+}
+.contact > h3 {
+	padding: 0 0 0 30px;
+}
+
+.contact  aside.aside-contact-form {
+	float: left;
+	width: 60%;
+	margin: 0 0 0 0px;
+	padding: 0 0 0 60px;
+}
+
+.contact aside.aside-contact-info {
+	float: right;
+	width: 30%;
+}
+
+textarea {
+    width: 410px;
+    padding: 15px 0 0 15px;
+    border: 1px solid #000;
+    background-color: transparent;
+    border-radius: 5px;
+    color: black;
+}
+
+#chars {
+	font-size: .9em;
+	width: 90%;
+	margin: 0 0 0 0;
+
+
+}
+
+input[type=text], input[type=password] {
+	color: black;
+    width: 400px;
+    height: 30px;
+    margin-bottom: 10px;
+   padding: 0 0 0 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+input:focus{
+	outline: none !important;
+	border-color: black;
+	box-shadow: 0 0 10px;
+}
+.submit {
+    width: 20%;
+    background-color: transparent;
+    border-radius: 4px;
+	margin-top: 10px;
+    color: black;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: black;
+    transition-duration: 0.4s;
+    
+}
+
+.submit:hover{
+    background-color: rgba(0,0,0, 1);
+    color: white;
+}
+
+.contact-info {
+	text-align: left;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 0px 0 0 0px;
+	line-height: 15px;
+	/*background-color: gray;*/
+}
+.image {
+	position: relative;
+	left: 10%;
+	border-radius: 5px;
+}
+.contact::after {
+	content:'';
+	display: block;
+	clear: both; 
+}
+
+.contact-info span {
+	font-size: .4em; 
+	font-weight: normal; 
+	line-height: 3px; 
+	margin: 0 0 0 0;
+}
+
+/* Thank-you page */
+.thankyou {
+	position: relative;
+	top: 10%;
+	left: 30%;
+	width:500px;	
+	height: 500px;
+	text-align: center;
+	margin: 10px 0 20px 0;
+}
+
+.thankyou > h1 {
+	font-size: 4em;
+	position: relative;
+	top: 25%;
+}
+
+/* About */
+.about{
+	/*position: relative;
+	left: 8%;
+	margin: 0 0 40px 0;
+	padding: 50px 60px 10px 60px;
+	width: 75%;
+	background-color: rgba(255,255,255,.1);*/
+	width: 80%;
+	height: auto;
+	position: relative;
+	color: rgba(0,0,0,1);
+	background-color: rgba(0,0,0, .05);
+	border-radius: 4px;
+	padding: 30px 40px 40px 40px;
+	margin: 0 0 40px 7%;
+}
+
+.about > p, .about > ul {
+	font-weight: normal;
+	font-size: .9em;
+	line-height: 18px;
+}
+
+.about hr {
+	/*margin-top: 30px;
+	color: transparent;
+	border: 0 0 1px 0;
+	border-color: black;*/
+	/*height: 20px; */
+	margin-bottom: 50px; 
+	border:0.5px solid; 
+	border-top: 0px; 
+	border-right: 0px; 
+	border-left: 0px; 
+	border-color:black;
+}
+
+/* Footer */
+footer {
+	position: absolute;
+	bottom: 10px;
+	left: 5%;
+	padding-bottom: 0px;
+	font-size: .8em;
+	color: #000;
+	height: 4px;
+}
+
+footer .content {
+	display: inline;
+}
+
+footer a {
+	margin-left: 5px;
+	color: #000;	
+}
+
+footer a:visited {
+	color: #000;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1170px){
+	
+	header {
+		left: 2%;
+	}
+	
+	nav {
+		background-color: rgba(0,0,0, .05);
+		border-radius: 5px;
+		position: absolute;
+		top: 0px;
+		left: 6%;
+		margin-left: 0%;
+		margin-top: 50px;	
+		padding: 10px 0 0 0;
+		width: 100%
+		border: 1px solid;
+	}
+
+	nav ul {
+		list-style: none; 
+		margin: 0;
+		padding: 0px;
+	}
+
+	nav ul li a {
+		display: inline-block;
+		color: #000;
+		padding: 10px 10px;
+		text-decoration: none;
+		width: 100px;
+		position: relative;
+		text-align: center;
+	}
+
+/* top-level */
+	nav > ul {
+		padding-left: 400px;
+	}
+
+	nav > ul > li {
+		float: left;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	
+	.contact-info {
+		display: none;
+	}
+	
+	header a.logo{
+		width: 130px;
+		height: 45px;
+		font-size: 1.9em;
+		top: 55px;
+		left: 100px;
+	}
+	
+	nav {
+		left: 6%;
+		width: 90%;	
+	}
+	
+	nav ul li a {
+		display: inline-block;
+		color: #000;
+		padding: 10px 10px;
+		text-decoration: none;
+		width: 90px;
+		position: relative;
+		text-align: center;
+	}
+
+	nav > ul {
+		padding-left: 280px;
+	}
+	.shahid {
+		left: 43%;
+	}
+/* Home page */
+	#home {
+		width: 50%;
+	}
+
+	#education > div.txt-pos > ul.algonquin {
+			padding-top: 40px;
+	}
+	
+	#education > div.txt-pos > ul.BSIT {
+		padding: 40px 0 0 35px;
+	}
+	
+	/* Thank-you page */
+	.thankyou {
+		left: 25%;
+	}
+	
+}
+
+@media screen and (max-width: 850px){
+	.contact-info {
+		display: none;
+	}
+	
+	header a.logo{
+	
+		width: 130px;
+		height: 45px;
+		font-size: 1.9em;
+		top: 55px;
+		left: 100px;
+	}
+	
+	nav ul li a {
+		display: inline-block;
+		color: #000;
+		padding: 10px 10px;
+		text-decoration: none;
+		width: 80px;
+		position: relative;
+		text-align: center;
+		font-size: .9em;
+	}
+
+	nav > ul {
+		padding-left: 220px;
+	}
+
+	/* Home page */
+	#home {
+		width: 50%;
+	}
+	
+	#education > div.txt-pos > ul.algonquin {
+			padding-top: 55px;
+	}
+	
+	#education > div.txt-pos > ul.BSIT {
+		padding: 57px 0 0 35px;
+	}
+	
+	/* Thank-you page */
+	.thankyou {
+		left: 20%;
+	}
+	
+}
+
+
+@media screen and (max-width: 760px){
+	
+	header a.logo{
+		width: 130px;
+		height: 45px;
+		font-size: 1.9em;
+		top: 12%;
+		left: 12%;
+		padding: 4px 0 2px 0;
+	}
+	
+	header div.div-logo {
+		top: 666px;
+		width: 200px;
+		color: red;
+	}
+	
+	nav {
+		margin-top: 100px;
+		left: 3%;
+		width: 100%;	
+		
+	}		
+	
+	nav > ul {
+		padding-left: 0%;
+		width: 500px;
+	}
+	
+	nav > ul > li {
+		position: relative;
+		left: 30%
+	}
+	
+	#home {
+		height: 520px;
+		background-color: rgba(0,0,0, .05);
+		width: 60%;
+		margin: 50px 0 50px 20%;
+		padding: 0 0 0 0;
+	}
+	
+	.shahid {
+		left: 40%;
+	}
+	
+	.resume {
+		top: 50px;
+		padding-bottom: 10px;
+	}
+	
+	.text-position-right {
+		text-align: right;
+	}
+
+	.text-position-left {
+		text-align: left;
+	}
+
+	#education > div.txt-pos > ul.algonquin {
+			padding-top: 55px;
+	}
+	
+	#education > div.txt-pos > ul.BSIT {
+		padding: 57px 0 0 35px;
+	}
+	
+ 	.experience {
+ 		padding: 0 0 0 0;	
+ 		text-align: left;
+ 	}
+ 	
+	.experience aside {
+		width: 46%;
+		float: left;
+		padding: 0 0 0px 10px;
+		margin: 0px 0px 0px 0px;
+	}
+	
+	.experience aside h4 {
+ 		margin-left: 2%;
+		font-weight: bold;
+		font-size: 1em;
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+	}
+	
+	.experience aside h5 {
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+		font-weight: normal;
+		font-size: .8em;
+	}
+	
+	.title {
+		height: 30px;
+		margin: 5px 0 0 0;
+		padding: 0 0 0 5%;
+		text-align: left;
+	}
+	
+	.roles{
+		margin: 0 0 0 7%;
+		font-size: .9em;
+		line-height: 20px;
+	}
+	
+	.top-padding { 
+		margin-bottom: 20px;
+	}
+	
+	.contact {
+		top: 50px;
+		padding-bottom: 10px;
+		/*position: relative;
+		background-color: rgba(255,255,255, .05);
+		height: auto;
+		margin-bottom: 7%;
+		padding: 40px 40px 20px 40px;
+		margin: 8% 0 5% 5%;*/
+	}
+	
+	.contact  aside.aside-contact-info {
+		width: 0%;
+		display: none;
+	}
+	
+	.contact  aside.aside-contact-form {
+		float: left;
+		width: 100%;
+	}
+	
+	.contact-info {
+		display: none;
+	}
+	
+	.about {
+		/*margin: 40px 0 0 0;*/
+		top: 50px;
+		padding-bottom: 10px;
+	}
+	
+	/* Thank-you page */
+	.thankyou {
+		left: 20%;
+	}
+	
+}
+
+@media screen and (max-width: 670px){
+	
+		/* Home page */
+	#home {
+		width: 60%;
+		margin: 50px 0 50px 27%;
+	}
+
+/* Explore */
+	.shahid {
+		width: 30%;
+		left: 45%;
+	}
+	
+	div.explore {
+		left: 30%;
+	}
+	
+	/* Resume */
+	.resume hr { 
+		color: black;
+		margin-top: 5px;
+		margin-bottom: 15px;	
+	}
+
+	.resume-content aside{
+		width: 70%;
+		float: left;
+		padding: 0 0 0px 0px;
+		margin: 0px 0px 0px 0px;
+	}
+	
+	#education aside.duration {
+		width: 30%;
+		padding-left: 0px;
+		text-align: center;
+		padding-bottom: 16px;
+	}
+	
+	.text-position-right {
+		text-align: right;
+	}
+
+	.text-position-left {
+		text-align: left;
+	}
+	
+	.school {
+		padding: 0 0 0 20px;
+	}
+	
+	.school > li > h5{
+		padding: 0 0 0 0px;
+		margin: 0 0 0 0px;
+		font-size: .9em;
+	}
+	
+	#education > div.txt-pos > ul.algonquin {
+			padding-top: 35px;
+	}
+	
+	#education > div.txt-pos > ul.BSIT {
+		padding: 20px 0 0 35px;
+	}
+	
+	#education div.txt-pos {
+		width: 100%;
+		padding-top: 1%;
+		text-align: left;
+		margin-left: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+	}
+	
+	#professional-certifications div.txt-pos > ul{
+		margin: 0 0 15px 0;
+		padding: 0 0 0 15px;
+
+	}
+	
+	#professional-certifications div.txt-pos > ul > li{
+		line-height: 20px;
+	}
+	
+	#program-related-skills div.txt-pos > ul {
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		line-height: 20px;
+	}
+	
+ 	.experience {
+ 		text-decoration: 
+ 		padding: 0 0 10px 0;	
+ 		text-align: left;
+ 	}
+ 	
+	.experience aside.place {
+		margin: 10px 0 0 0;
+		width: 60%;
+	}
+	
+	.experience aside.duration {
+		margin: 10px 0 0 0;
+		width: 35%;
+	}
+	
+	.experience aside h4 {
+		font-weight: bold;
+	}
+	
+	.experience aside h5 {
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+		font-weight: normal;
+		font-size: .9em;
+		color: black;
+	}
+	
+	.title {
+		height: 30px;
+		margin: 25px 0 0 10px;
+		padding: 0 0 0 5%;
+		text-align: left;
+
+	}
+	
+	.experience div.roles > ul{
+		margin: 0 0 0 0;
+		padding: 0 0 0 20px;
+	}
+	
+	.experience div.roles > ul.roles-kanata {
+		margin: 10px 0 0 0;
+		padding: 5px 0 0 20px;
+	}
+	
+	.experience div.roles > ul > li {
+		line-height: 20px;
+	}
+	
+	.contact {
+		/*position: relative;
+		background-color: rgba(255,255,255, .05);
+		height: auto;
+		padding: 40px 40px 20px 10px;
+		margin: 8% 0 5% 5%;*/
+	}
+	
+	input[type=text], input[type=password] {
+	    width: 80%;
+	    margin: 0 0 10px 0;
+	   padding: 0 0 0 15px;
+	}
+	
+	textarea {
+	    width: 80%;
+	}
+	
+	.contact-info {
+		display: none;
+	}
+	/* Thank-you page */
+	.thankyou {
+		left: 15%;
+	}
+	
+	.thankyou > h1 {
+		font-size: 3.5em;
+		position: relative;
+		top: 25%;
+	}
+	/* Footer */
+	.footer {
+		padding-left: 10%;	
+		margin-top: 15%;
+	}
+	
+	footer div.content { 
+		display: block;
+		margin-top: 15px;
+	}
+	
+}
+@media screen and (max-width: 625px){
+		
+	header a.logo{
+		width: 130px;
+		height: 45px;
+		font-size: 1.9em;
+		top: 12%;
+		left: 12%;
+		padding: 4px 0 2px 0;
+	}
+	
+	header div.div-logo {
+		/*top: 666px;
+		width: 200px;
+		color: red;
+		background-color: red;*/
+	}
+	
+	nav {
+		margin-top: 100px;
+		left: 6%;
+		width: 95%;	
+	}		
+	
+	nav > ul {
+		width: 100%;
+	}
+	
+	nav > ul > li {
+		position: relative;
+		left: 10%
+	}
+	
+		/* Home page */
+	#home {
+		width: 60%;
+		margin: 50px 0 50px 20%;
+	}
+
+/* Explore */
+	.shahid {
+		width: 35%;
+		left: 38%;
+	}
+		
+	div.explore {
+		left: 30%;
+	}
+	
+	
+	.school > li > h5{
+		font-size: .9em;
+	}
+	
+	#education > div.txt-pos > ul.BSIT {
+			padding-top: 35px;
+	}
+	
+	#education > aside.duration > h5 {
+		font-size: .8em;
+	}
+	
+	.contact {
+		/*position: relative;
+		background-color: rgba(255,255,255, .05);
+		height: auto;
+		padding: 40px 40px 20px 10px;
+		margin: 8% 0 5% 5%;*/
+	}
+	
+	input[type=text], input[type=password] {
+	    width: 80%;
+	    margin: 0 0 10px 0;
+	    padding: 0 0 0 15px;
+
+	}
+	textarea {
+	    width: 80%;
+	}
+	.about{
+		/*margin: 10% 0 40px 0;
+		padding: 30px 30px 10px 30px;
+		width: 80%;*/
+	}
+	
+	.about > p, .about > ul {
+		font-weight: normal;
+		font-size: .9em;
+		line-height: 18px;
+	}
+	.about hr {
+		margin-top: 30px;
+	}
+	
+	/* Thank-you page */
+	.thankyou {
+		left: 15%;
+	}
+	
+}
+
+
+@media screen and (max-width: 500px){
+	/* Header */
+	header a.logo{
+	
+		width: 140px;
+		height: 45px;
+		font-size: 1.9em;
+		top: 15px;
+		left: 28%;
+		background-color: rgba(0, 0, 0, .05);
+	}
+	
+	/* Navigation */
+	nav {
+		margin-top: 100px;
+		left: 3%;
+		width: 95%;	
+	}		
+	
+	nav > ul {
+		width: 100%;
+	}
+	
+	nav > ul > li {
+		position: relative;
+		left: 5%
+	}
+	
+	nav > ul > li > a {
+		padding: 10px 0px 10px 0px;
+		width: 70px;
+		
+	}
+	
+	/* Home */
+	#home {
+		height: 420px;
+
+		width: 80%;
+		margin: 50px 0 50px 10%;
+
+	}
+
+/* Explore */
+	.shahid {
+		position: absolute; 
+		width: 45%;
+		top: 35%;
+		left: 30%;
+	}
+	
+	.shahid h1 {
+		font-size: 2em;
+	
+	}
+	
+	div.explore {
+		width: 150px;
+		height: 150px;
+		position: relative;
+		top: 200px;
+		left: 22%;
+	}
+	
+	/* Resume */	
+	.resume {
+		width: 90%;
+		height: auto;
+		position: relative;
+		color: rgba(0,0,0,1);
+		background-color: rgba(0,0,0, .05);
+		border-radius: 4px;
+		margin: 0 5px 40px 10px;
+		padding: 30px 0px 40px 10px;
+	}
+	
+	.resume hr { 
+		color: black;
+		margin-top: 0px;
+		margin-bottom: 15px;
+		margin-right: 10px;	
+	}
+	
+	.resume h3 {
+		font-size: 1.1em;
+		margin: 10px 0 0 0;
+		padding: 0 0 0 0;
+
+	}
+
+	.resume-content aside{
+		width: 70%;
+		float: left;
+		padding: 0 0 0px 0px;
+		margin: 0px 0px 0px 0px;
+	}
+	
+	#education {
+		border-bottom: 1px solid black;
+		margin: 0 10px 20px 0px;
+	}
+	
+	#education aside.duration {
+		width: 30%;
+		padding-left: 0px;
+		font-size: .8em;
+		font-weight: bold;
+		text-align: left;
+	}
+	
+	.school {
+		padding: 0 0 0 20px;
+	}
+	
+	.school > li > h5{
+		padding: 0 0 0 0px;
+		margin: 0 0 0 0px;
+		font-size: 1em;
+	}
+	
+	#education > div.txt-pos > ul.algonquin {
+			padding-top: 50px;
+	}
+	#education > div.txt-pos > ul.BSIT {
+		padding: 50px 0 0 35px;
+	}
+	
+	#education div.txt-pos {
+		width: 100%;
+		padding-top: 1%;
+		text-align: left;
+		margin-left: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+	}
+	
+	#education div.txt-pos > ul > ul {
+
+		padding: 0 0 0 15px;
+		margin: 0 0 0 0;
+	}
+	
+	#professional-certifications {
+		border-bottom: 1px solid black;
+		padding: 0 0 0 0;
+		margin: 0 10px 20px 0;
+	}
+	
+	#program-related-skills {
+		border-bottom: 1px solid black;
+		margin: 0 10px 20px 0;
+		margin-right: 10px;
+	}
+	
+	.experience{
+		border-bottom: 1px solid black;
+		margin-right: 10px;
+	}
+	
+	.resume-content aside h5 {
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+		font-size: .9em;
+	}
+	
+	.text-position-right {
+		text-align: right;
+	}
+
+	.text-position-left {
+		text-align: left;
+	}
+	
+	#professional-certifications div.txt-pos > ul{
+		margin: 0 0 15px 0;
+		padding: 0 0 0 15px;
+
+	}
+	
+	#professional-certifications div.txt-pos > ul > li{
+		line-height: 20px;
+	}
+	
+	#program-related-skills div.txt-pos > ul {
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+		line-height: 20px;
+	}
+	
+ 	.experience {
+ 		/*text-decoration: */
+ 		padding: 0 0 10px 0;	
+ 		text-align: left;
+
+ 	}
+ 	
+	.experience aside.place {
+		margin: 10px 0 0 0;
+		width: 50%;
+	}
+	
+	.experience aside.duration {
+		margin: 10px 0 0 0;
+		width: 35%;
+	}
+	
+	.experience aside h4 {
+		font-weight: bold;
+	}
+	
+	.experience aside h5 {
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+		font-weight: normal;
+		font-size: .8em;
+		color: black;
+	}
+	
+	.title {
+		height: auto;
+		margin: 40px 0 0 10px;
+		padding: 0 0 0 5%;
+		text-align: left;
+
+	}
+	
+	.experience div.roles > ul{
+		margin: 0 0 0 0;
+		padding: 0 0 0 20px;
+	}
+	
+	.experience div.roles > ul.roles-kanata {
+		margin: 10px 0 0 0;
+		padding: 5px 0 0 20px;
+	}
+	.experience div.roles > ul > li {
+		line-height: 20px;
+	}
+		
+	/* Contact */
+	.contact {
+		/*position: relative;*/
+		/*background-color: rgba(255,255,255, .05);
+		height: auto;
+		width: auto;
+		margin: 40px 0px 0 10px;
+		padding: 10px 10px 10px 0;*/
+		width: 90%;
+		height: auto;
+		position: relative;
+		color: rgba(0,0,0,1);
+		background-color: rgba(0,0,0, .05);
+		border-radius: 4px;
+		margin: 0 5px 40px 10px;
+		padding: 30px 0px 40px 10px;
+	}
+	
+	.contact > h3 {
+		font-size: 1em;
+		margin: 0 0 10px 0px;
+		padding: 0 0px 0 0px;
+	}
+	
+	.contact  aside.aside-contact-form {
+		/*float: right;*/
+		width: 100%;
+		/*padding-left: 20px;*/
+		/*background-color: red;*/
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+	
+	.contact aside.aside-contact-info {
+		/*float: none;
+		width: 10%;*/
+		/*background-color: red;*/
+		display:none;
+	}
+	
+	textarea {
+	    width: 90%;
+	    padding: 10px 0 0 10px;
+	  
+	}
+	
+	input[type=text], input[type=password] {
+	    width: 95%;
+	    height: 30px;
+	   padding: 0 0 0 10px;
+	    border-radius: 5px;
+	    box-sizing: border-box;
+	    background-color: transparent;
+	}
+	
+	.submit {
+	    width: 28%;
+    	margin: 0 0 0 10px;
+	    background-color: transparent;
+	    border-radius: 4px;
+		margin-top: 10px;
+	    color: black;
+	    font-family: Ubuntu;
+	    font-size: 18px;
+	    font-weight: bold;
+	    border: 1px solid;
+	    border-color: black;
+	    
+	}
+	
+	.submit:hover{
+	    background-color: rgba(0,0,0, 1);
+	    color: white;
+	}
+	
+	.contact::after {
+		content:'';
+		display: block;
+		clear: both; 
+	}
+	
+	.about{
+		/*margin: 10% 0 40px 0;
+		padding: 10px 10px 10px 10px;
+		width: 90%;
+		left: 20px;*/
+			width: 90%;
+		height: auto;
+		position: relative;
+		color: rgba(0,0,0,1);
+		background-color: rgba(0,0,0, .05);
+		border-radius: 4px;
+		margin: 0 5px 40px 10px;
+		padding: 30px 10px 40px 10px;
+	}
+	
+	.about > p, .about > ul {
+		font-weight: normal;
+		font-size: .9em;
+		line-height: 18px;
+	}
+	
+	.about hr {
+		margin-top: 30px;
+	}
+	
+	/* Thank-you page */
+	.thankyou {
+		position: relative;
+		top: 10%;
+		left: 5%;
+		width:300px;	
+		height: 400px;
+		text-align: center;
+		margin: 10px 0 20px 0;
+	}
+	
+	.thankyou > h1 {
+		font-size: 3em;
+		position: relative;
+		top: 25%;
+	}
+	/* Footer */
+	footer {
+		position: relative;
+		top: 50px;
+		left: 0%;
+		font-size: .8em;
+		color: #000;
+		font-size: .6em;
+	}
+	
+	footer .footer {
+		padding: 0 0 0 6%;
+		margin: 0 0 0 0;
+	}
+	
+	footer .content {
+		display: inline;
+	}
+	
+	footer a {
+		margin-left: 0px;
+		color: #000;		
+	}
+	
+	footer a:visited {
+		color: #000;
+	}
+	
+	footer a:hover {
+		color: #fff;
+	}
+
+}
